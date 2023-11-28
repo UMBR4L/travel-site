@@ -1,63 +1,77 @@
-
 <!DOCTYPE html>
 <html>
+    
+    <!-- Head Section: contains metadata and stylesheets-->
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Travel Site | Greece</title>
+        <link rel="stylesheet" href="/css/global.css"/>
+        <link rel="stylesheet" href="/css/destination.css"/>
     </head>
     <body>
-        <header>
-            <div class="logo">Travel Site</div>
-            <nav>
+
+        <!-- Header Section: contains navigation and branding-->
+    <header>
+        <nav class="nav-bar">
+          <div class="logo">Travel Site</div>
+          <ul>
+            <li><a href="/" alt="Home Page">Home</a></li>
+            <li><a href="/pages/hawaii.html">Hawaii</a></li>
+            <li><a href="/pages/iceland.html">Iceland</a></li>
+            <li><a class="active-page" href="/pages/greece.html">Greece</a></li>
+          </ul>
+        </nav>
+      </header>
+
+        <!-- Main Section:
+        contains information about the destination in the form of cards-->
+        <main class="destination destination--greece">
+            <h1>Greece</h1>
+            <div class="card card--fri">
+                <h3>Friday</h3>
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/pages/hawaii.html">Hawaii</a></li>
-                    <li><a href="/pages/iceland.html">Iceland</a></li>
-                    <li><a href="/pages/greece.html">Greece</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main class="destination">
-            <img/>
-            <h2></h2>
-            <div class="card">
-                <h3></h3>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3></h3>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>Breakfast</li>
+                    <li>Lunch</li>
+                    <li>Dinner</li>
+                    <li>Dancing</li>
                 </ul>
             </div>
-            <div class="card">
-                <h3></h3>
+            <div class="card card--sat">
+                <h3>Saturday</h3>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>Breakfast</li>
+                    <li>Lunch</li>
+                    <li>Dinner</li>
+                    <li>Dancing</li>
+                </ul>
+            </div>
+            <div class="card card--sun">
+                <h3>Sunday</h3>
+                <ul>
+                    <li>Breakfast</li>
+                    <li>Lunch</li>
+                    <li>Dinner</li>
+                    <li>Dancing</li>
                 </ul>
             </div>
         </main>
-        <footer>
-            <section>
+
+        <!-- Footer Section: 
+        contains Contact Info, Opening Hours, and Social Media links -->
+        <footer class="footer">
+            <section class="contact">
                 <h2>Contact</h2>
-                <article>
+                <article class="contact--details">
                     <h3>Email</h3>
                     <p>info@travelsite.com</p>
                 </article>
             </section>
-            <section>
-                <h2>Hours</h2>
-                <article>
-                    <h3>Monday - Friday</h3>
+            <section class="hours">
+                <h2 id="heading--hours">Hours</h2>
+                <section class="hours--details">
+                <article class="hours--mon-fri">
+                    <h3 id="heading--mon-fri">Monday - Friday</h3>
                     <p>9:00 AM - 5:00 PM</p>
                 </article>
                 <article>
@@ -68,13 +82,23 @@
                     <h3>Sunday</h3>
                     <p>Closed</p>
                 </article>
+                </section>
             </section>
             <section class="social">
-                <ul>
-                    <li><a href="#instagram"><img/></a></li>
-                    <li><a href="#facebook"><img/></a></li>
-                    <li><a href="#twitter"><img/></a></li>
+                <h2>Social</h2>
+                <section>
+                <ul class="social--details">
+                  <li>
+                    <a href="#instagram"><img alt="instagram" src="/assets/images/icon-instagram.png" /></a>
+                  </li>
+                  <li>
+                    <a href="#facebook"><img alt="facebook" src="/assets/images/icon-facebook.png" /></a>
+                  </li>
+                  <li>
+                    <a href="#twitter"><img alt="twitter" src="/assets/images/icon-twitter.png" /></a>
+                  </li>
                 </ul>
+                </section>
             </section>
         </footer>
     </body>
