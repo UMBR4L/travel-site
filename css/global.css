@@ -1,6 +1,6 @@
 /* GLOBAL STYLES */
 body {
-  width: 1280px;
+  width: 100%;
   font-family: Verdana;
   margin: 3rem 0 0;
 }
@@ -87,7 +87,8 @@ header > .hero {
   width: 40%;
 }
 
-/* Main Styles: Recommendations Section: */
+/* Main Styles: Recommendations Section: 
+    recommendations for travel destinations offered by the travel site, presented in the form of cards*/
 main > .recommendations__heading {
   color: #335576;
   padding-top: 1rem;

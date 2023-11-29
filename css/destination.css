@@ -1,73 +1,76 @@
-
-body {
-    
-}
+/* Destination Styles:
+    styles for pages on the destinations available from the travel site */
 
 main.destination {
-    display: flex;
-    
-    background-size: cover;
-    height: 55vw;
-    align-items: center;
-    justify-content: space-evenly;
-    background-position: center;
-    background-repeat: no-repeat;
+  display: flex;
+  background-size: cover;
+  height: 55vw;
+  align-items: center;
+  justify-content: space-evenly;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  flex-wrap: wrap;
 }
 
 main.destination--iceland {
-    background-image: url("/assets/images/iceland.jpg");
+  background-image: url("/assets/images/iceland.jpg");
 }
 
 main.destination--hawaii {
-    background-image: url("/assets/images/hawaii.jpg")
+  background-image: url("/assets/images/hawaii.jpg");
 }
 
 main.destination--greece {
-    background-image: url("/assets/images/greece.jpg")
+  background-image: url("/assets/images/greece.jpg");
 }
 
 .destination > h1 {
     color: white;
     font-size: 4rem;
-    width: 100%;
-    position: absolute;
-    top: 0.8em;
-    left: 6%;
+    position: relative;
+    top: 1rem;
+    left: -9rem;
+    text-align: left;
+    width: 68%;
+    margin: 0;
 }
 
 .destination .card {
-    background-color: white;
-    width: 20vw;
-    height: 30vw;
-    display: flex;
-    border-radius: 5px;
-    flex-direction: column;
-    justify-content: flex-start;
+  background-color: white;
+  width: 20vw;
+  height: 30vw;
+  display: flex;
+  border-radius: 5px;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  top: -3em;
 }
 
 .card--fri {
-    margin-left: 13vw;
+  margin-left: 13vw;
 }
 
 .card--sun {
-    margin-right: 13vw;
-}   
+  margin-right: 13vw;
+}
 
 .destination .card > ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
+  list-style: none;
+  padding: 0;
+  text-align: center;
 }
 
 .destination .card > h3 {
-    text-align: center;
-    padding-bottom: 0;
-    border-bottom: 1px solid;
-    margin: 1rem;
+  text-align: center;
+  padding-bottom: 0;
+  border-bottom: 1px solid;
+  margin: 1rem;
 }
 
 .destination .card > ul > li {
-    background-color: #fefaf5;
-    margin: 1rem;
-    padding: 1rem 0rem;
+  background-color: #fefaf5;
+  margin: 1rem;
+  padding: 1rem 0rem;
 }
